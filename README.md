@@ -1,6 +1,4 @@
 # myPortFolio
+My portfolio website. All about me.</br>
 
-My portfolio website</br>
-All about Me </br>
-
-[Demo Link](https://image-colorpicker.netlify.app/)
+[Visit Website](http://www.emmanuelbugyei.com/)
