@@ -1,0 +1,275 @@
+.skill-wrapper {
+	width: 100%;
+	height: 100vh;
+	color: #000;
+	padding: 35px 45px;
+	background-color: rgb(203, 203, 236);
+	text-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+}
+
+.skill-wrapper p {
+	font-size: 16px;
+}
+
+.skill-wrapper h1 {
+	margin-bottom: 25px;
+	margin-left: 10%;
+}
+
+.skill-link__container {
+	font-family: sans-serif;
+	position: relative;
+	width: 89%;
+	height: 48%;
+	margin: auto;
+	text-align: left;
+	z-index: 1;
+}
+
+.skill-link__container li {
+	width: 40%;
+	font-size: 18px;
+	text-align: right;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-right: 6px solid #aeb2f3;
+}
+
+.skill-link__container h1 {
+	font-size: 40px;
+	margin-left: initial;
+	margin-top: 50px;
+}
+
+
+.skill-link__container::before {
+	position: absolute;
+	content: "";
+	top: 70px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	z-index: -8;
+}
+
+.skill-content {
+	width: 89%;
+	margin: auto;
+	height: 52%;
+	display: flex;
+	text-decoration: none;
+	background-color: transparent;
+	justify-content: space-between;
+}
+
+.skill-content__intro,
+.skill-content__graph {
+	width: 45%;
+	height: 100%;
+}
+
+.skill-content__intro h3 {
+	padding: 0px 0px 25px;
+}
+
+.skill-content__intro p {
+	padding-bottom: 10px;
+}
+
+.skill-icon {
+	width: 100%;
+	font-size: 50px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill-icon li:first-child {
+	color: #f88442;
+}
+
+.skill-icon li:nth-child(2) {
+	color: #1572b6;
+}
+
+.skill-icon li:nth-child(3) {
+	color: #d6ba32;
+}
+
+.skill-icon li:nth-child(4) {
+	color: #00d8ff;
+}
+
+.skill-icon li:nth-child(6) {
+	color: #44ba56;
+}
+
+.skill-item {
+	width: 100%;
+}
+
+.skill-item__text {
+	position: relative;
+	width: 100%;
+	padding-top: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill-percentage {
+	position: absolute;
+	right: 0;
+	font-weight: bold;
+}
+
+.skill-value {
+	margin-right: 14px;
+	font-weight: bold;
+}
+
+.progress {
+	border-radius: 10px;
+	position: relative;
+	background-color: #aeb2f3;
+	border: 1px solid #e6e6fa;
+	transition: all .3s;
+}
+
+.progress-done {
+	padding: 3px;
+	color: #fff;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 0px;
+	opacity: 0;
+	overflow: hidden;
+	transition: .7s ease;
+	background-color: red;
+	box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+	animation: progress 1s;
+}
+
+.animation_trigger {
+	animation: progress 1s;
+	background-color: rgb(0, 4, 255);
+}
+
+@media screen and (max-width: 540px) {
+	.skill-wrapper {
+		height: initial;
+		padding: 20px;
+	}
+
+	.skill-wrapper h1 {
+		margin: initial;
+		font-size: revert;
+	}
+
+	.skill-link__container {
+		width: 100%;
+		margin: initial;
+	}
+
+	.skill-link__container h1 {
+		margin-top: 50px;
+	}
+
+	.skill-link__container::before {
+		top: 50px;
+	}
+
+	.skill-link__container li {
+		width: 100%;
+		padding: 0px 20px 0px 0px;
+		margin-left: initial;
+		margin-right: initial;
+		margin-top: 25px;
+	}
+
+	.skill-content {
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+	.skill-content__intro,
+	.skill-content__graph {
+		width: 100%;
+	}
+
+	.skill-icon {
+		width: 100%;
+		margin: 25px 0px;
+		font-size: 40px;
+	}
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+	.skill-wrapper {
+		height: initial;
+		padding: 20px;
+	}
+
+	.skill-wrapper h1 {
+		margin: initial;
+	}
+
+	.skill-link__container {
+		width: 100%;
+		margin: initial;
+	}
+
+	.skill-link__container h1 {
+		margin-top: 50px;
+	}
+
+	.skill-link__container::before {
+		top: 65px;
+	}
+
+	.skill-link__container li {
+		width: 100%;
+		padding: 0px 20px 0px 0px;
+		margin-left: initial;
+		margin-right: initial;
+		margin-top: 25px;
+	}
+
+	.skill-content {
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+	.skill-content__intro,
+	.skill-content__graph {
+		width: 100%;
+	}
+
+	.skill-icon {
+		width: 100%;
+		margin: 25px 0px;
+		font-size: 40px;
+	}
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+	.skill-content {
+		width: 100%;
+	}
+
+	.skill-link__container {
+		width: 100%;
+	}
+
+	.skill-link__container li {
+		width: 50%;
+	}
+}

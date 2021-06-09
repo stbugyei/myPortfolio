@@ -1,0 +1,145 @@
+.footer-wrapper {
+	position: relative;
+	width: 100%;
+	padding: 45px;
+	text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+	background-color: #a6a8df;
+	transition: all .3s;
+}
+
+.footer-top {
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+}
+
+.footer__container {
+	width: 89%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-content {
+	line-height: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-content:nth-of-type(1) {
+	width: 35%;
+}
+
+.footer-content:nth-of-type(4) {
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: 0;
+	color: #fff;
+}
+
+.footer-content:nth-of-type(4) p {
+	margin-bottom: initial;
+}
+
+.footer-content p {
+	padding: initial;
+	font-size: initial;
+}
+
+.Footer-title p {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.Footer-link:hover {
+	color: #1a237e;
+	cursor: pointer;
+}
+
+.footer-content i {
+	margin-right: 15px;
+}
+
+.github:hover {
+	color: #fff;
+}
+
+.facebook:hover {
+	color: #3b5998;
+}
+
+.linkedin:hover {
+	color: #007bb5;
+}
+
+/*
+=== media querry ===
+*/
+
+@media screen and (max-width: 540px) {
+	.footer-wrapper {
+		padding: 20px;
+	}
+
+	.footer__container {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.footer-content {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.footer-content:nth-of-type(1) {
+		width: 100%;
+		margin-top: 25px;
+	}
+
+	.footer-content:nth-of-type(4) {
+		text-align: left;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+	.footer-wrapper {
+		padding: 20px;
+	}
+
+	.footer__container {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.footer-content {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.footer-content:nth-of-type(1) {
+		width: 100%;
+		margin-top: 25px;
+	}
+
+	.footer-content:nth-of-type(4) {
+		text-align: left;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+	.footer__container {
+		width: 100%;
+	}
+
+	.footer-content {
+		width: 20%;
+	}
+}

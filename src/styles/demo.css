@@ -1,0 +1,356 @@
+.demo-wrapper {
+	width: 100%;
+	color: #000;
+	padding: 45px;
+	background-color: rgb(203, 203, 236);
+	text-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+	transition: all .3s;
+}
+
+.demo-wrapper h1 {
+	position: relative;
+	width: 89%;
+	font-family: sans-serif;
+	font-size: 40px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	margin-left: 5%;
+}
+
+.demo-wrapper h1::before {
+	position: absolute;
+	content: "";
+	top: 70px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background-color: red;
+}
+
+.demo-wrapper h2 {
+	font-family: sans-serif;
+	margin-left: 5%;
+}
+
+.demo-btn {
+	width: 100%;
+	margin: 15px 0px;
+	line-height: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: red;
+	border: 2px solid;
+	border-radius: 20px;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+	transition: all .3s;
+
+	width: 75%;
+	border-radius: 8px;
+}
+
+.demo-btn:hover {
+	color: #fff;
+	border-color: #fff;
+	text-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+}
+
+.demo-content {
+	width: 89%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-decoration: none;
+	padding: 0px 0px 25px;
+	background-color: transparent;
+}
+
+.demo-content__item {
+	position: relative;
+	width: 25%;
+	text-align: center;
+	padding: 20px;
+	margin: 15px 15px 50px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+	transform: translateY(60px);
+	transition: transform .7s ease-out, opacity .7s ease-out;
+}
+
+.demo-content__bg,
+.demo-content__bg1,
+.demo-content__bg2,
+.demo-content__bg3,
+.demo-content__bg4,
+.demo-content__bg5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+	transition: all .7s;
+}
+
+.demo-content__item:hover .demo-content__bg,
+.demo-content__item:hover .demo-content__bg1,
+.demo-content__item:hover .demo-content__bg2,
+.demo-content__item:hover .demo-content__bg3,
+.demo-content__item:hover .demo-content__bg4,
+.demo-content__item:hover .demo-content__bg5 {
+	-webkit-transform: rotate(5deg) !important;
+	-ms-transform: rotate(5deg) !important;
+	transform: rotate(5deg) !important;
+	transition: transform 700ms ease-out;
+}
+
+.demo-content__item:hover .demo-content__bg {
+	background-color: #7dc0c0;
+}
+
+.demo-content__item:hover .demo-content__bg1 {
+	background-color: #8a2be2;
+}
+
+.demo-content__item:hover .demo-content__bg2 {
+	background-color: #0000ff;
+}
+
+.demo-content__item:hover .demo-content__bg3 {
+	background-color: #fe7e7a;
+}
+
+.demo-content__item:hover .demo-content__bg4 {
+	background-color: #219cbb;
+}
+
+.demo-content__item:hover .demo-content__bg5 {
+	background-color: #a5c9f5;
+}
+
+
+.demo-content__item:nth-of-type(4),
+.demo-content__item:nth-of-type(5),
+.demo-content__item:nth-of-type(6) {
+	transform: translateY(100px);
+	transition: transform .7s ease-out, opacity .7s ease-out;
+}
+
+.demo-content__item::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 2px;
+	background-color: #e6e6fa;
+}
+
+.demo-content__item::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 50%;
+	background-color: #e6e6fa;
+}
+
+.demo-content__item p {
+	font-size: 16px;
+	padding-bottom: 0;
+}
+
+.demo-content__item h2 {
+	padding-bottom: 10px;
+	margin: initial;
+}
+
+.demo-content__poster {
+	position: relative;
+	width: 80%;
+	height: 240px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+}
+
+.demo-content__item:hover .demo-content__text {
+	padding: 10px;
+	height: 100%;
+	opacity: 1;
+	transition: height 400ms ease-in;
+}
+
+.demo-content__item:hover .demo-btn {
+	color: #fff;
+	border-color: #fff;
+	text-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+}
+
+.demo-content__poster img {
+	/* width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0; */
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.demo-content__text {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	padding: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 4px;
+	background-color: #fff;
+	z-index: 99;
+	overflow: hidden;
+	transition: height 400ms ease-out;
+	margin: auto;
+}
+
+.more-demos {
+	display: flex;
+	color: #fff;
+	cursor: pointer;
+	margin: initial;
+}
+
+.more-demos:hover {
+	display: flex;
+	color: red;
+}
+
+.more-demos:hover .demo-arrow {
+	color: #fff;
+}
+
+.demo-arrow {
+	display: block;
+	color: red;
+	margin-right: 10px;
+	animation: verticalSlide1 .3s infinite alternate;
+}
+
+.pseudo::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 2px;
+	background-color: #e6e6fa;
+}
+
+.pseudo::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	height: 50%;
+	background-color: #e6e6fa;
+}
+
+@media screen and (max-width: 540px) {
+	.demo-wrapper {
+		height: initial;
+		padding: 20px;
+	}
+
+	.demo-wrapper h1 {
+		width: 100%;
+		margin: 50px 0px 0px;
+		font-size: 30px;
+	}
+
+	.demo-wrapper h2 {
+		width: 100%;
+		margin-left: initial;
+		font-size: 18px;
+	}
+
+	.demo-content {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.demo-content__item {
+		width: 100%;
+		margin: 0px 0px 50px 0px;
+	}
+
+	.webdesign,
+	.webadvertising,
+	.webapplication {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.demo-wrapper h1::before {
+		top: 50px;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+	.demo-wrapper {
+		height: initial;
+		padding: 20px;
+	}
+
+	.demo-wrapper h1 {
+		width: 100%;
+		margin: 50px 0px 0px;
+		font-size: revert;
+	}
+
+	.demo-wrapper h2 {
+		width: 100%;
+		margin-left: initial;
+		font-size: 18px;
+	}
+
+	.demo-content {
+		width: 100%;
+	}
+
+	.demo-content__item {
+		width: 45%;
+		margin: 0px 0px 50px 0px;
+	}
+
+	.webdesign,
+	.webadvertising,
+	.webapplication {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.demo-wrapper h1::before {
+		top: 50px;
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+	.demo-content {
+		position: relative;
+		width: 100%;
+	}
+
+	.demo-content__item {
+		position: relative;
+		width: 40%;
+	}
+}
