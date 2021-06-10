@@ -66,7 +66,7 @@ const Contact = (props) => {
 
         if (animate) {
             return {
-                animation: 'progressAnnex 0.5s'
+                animation: 'progressAnnex 0.8s'
             };
         }
         if (errorTxt !== 'undefined') {

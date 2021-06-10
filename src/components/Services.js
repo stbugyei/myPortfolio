@@ -43,7 +43,7 @@ const Services = (props) => {
 
     return (
 
-        <div ref={myServices} className="service-wrapper"  style={{ animation: animate ? 'fade1 1s' : 'undefined' }}>
+        <div ref={myServices} className="service-wrapper">
 
             <ul className="service-link__container">
                 <h1>OFFERING TO YOU</h1>

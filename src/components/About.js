@@ -33,14 +33,14 @@ const About = (props) => {
 
     return (
 
-        <div ref={aboutMe} className="about-wrapper" style={{ animation: animate ? 'fade1 1s' : 'undefined' }}>
+        <div ref={aboutMe} className="about-wrapper">
             <ul className="about-link__container">
                 <h1>ABOUT MYSELF</h1>
-                <p style={{ animation: animate ? 'textSlide1 0.8s' : 'undefined' }}> “There’s no need to be perfect to inspire others. Let others get inspired by how you deal with your imperfections.”</p>
+                <p style={{ animation: animate ? 'textSlide 1s' : 'undefined' }}> “There’s no need to be perfect to inspire others. Let others get inspired by how you deal with your imperfections.”</p>
             </ul>
 
             <ul className="about-content">
-                <li className="about-image" style={{ animation: animate ? 'textSlide 0.8s' : 'undefined'}}>
+                <li className="about-image" style={{ animation: animate ? 'fade 1s' : 'undefined'}}>
                 </li>
 
                 <li className="about-text">
