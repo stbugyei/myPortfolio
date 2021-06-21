@@ -7,8 +7,7 @@ const NavCard = (props) => {
     return (
         <ul className={isopen ? 'hidenav' : 'undefined'} style={getColorStyle()}>
 
-            <div className="liwrapper">
-
+            <ul className="liwrapper">
                 <li>
                     <button className={nameAttribute !== "home-wrapper" ? "undefined" : "activenav"} onClick={() => { closeNavBar(); scrollToRef(myHome) }} > HOME </button>
                 </li>
@@ -32,7 +31,7 @@ const NavCard = (props) => {
                 <li>
                     <button className={nameAttribute !== "contact-wrapper" ? "undefined" : "activenav"} onClick={() => { closeNavBar(); scrollToRef(myContact) }}> CONTACT </button>
                 </li>
-            </div>
+            </ul>
         </ul>
 
     )

@@ -7,12 +7,14 @@ const ContactCard = (props) => {
     return (
 
         <ul className="contact-content">
-            <div className={sentEmail !== "" ? "notification-wrapper" : "hide-notification"}  >
-                <div className="btn-notification">
-                    <span><i className="far fa-envelope"></i></span>
-                    <span>{sentEmail}</span>
+            <li>
+                <div className={sentEmail !== "" ? "notification-wrapper" : "hide-notification"}  >
+                    <div className="btn-notification">
+                        <span><i className="far fa-envelope"></i></span>
+                        <span>{sentEmail}</span>
+                    </div>
                 </div>
-            </div>
+            </li>
 
             <li className="socialmedia">
 

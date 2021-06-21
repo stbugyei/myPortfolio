@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from "react";
-
 import "../styles/services.css"
 
 
@@ -46,7 +45,8 @@ const Services = (props) => {
         <div ref={myServices} className="service-wrapper">
 
             <ul className="service-link__container">
-                <h1>OFFERING TO YOU</h1>
+                <li><h1>OFFERING TO YOU</h1></li>
+
                 <li>
                     <p> “To give real service you must add something which cannot be bought or measured with money, and that is sincerity and integrity.”
                     </p>
@@ -55,7 +55,7 @@ const Services = (props) => {
             </ul>
 
             <ul className="service-content">
-                <li className="webdesign"  style={getStyle('0.0s')}>
+                <li className="webdesign" style={getStyle('0.0s')}>
                     <span style={{ color: 'red', fontSize: '50px', paddingTop: '10px' }}><i className="fas fa-paint-brush"></i></span>
                     <h2>Web Design</h2>
                     <ul>

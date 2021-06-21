@@ -3,7 +3,7 @@
 	min-height: 100vh;
 	color: #000;
 	padding: 35px 45px;
-	background-color: rgb(203, 203, 236);
+	background-color: #f5f5f5;
 	text-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
 }
 
@@ -26,7 +26,7 @@
 	z-index: 1;
 }
 
-.skill-link__container li {
+.skill-link__container p {
 	width: 40%;
 	font-size: 18px;
 	text-align: right;
@@ -42,7 +42,6 @@
 	margin-left: initial;
 	margin-top: 50px;
 }
-
 
 .skill-link__container::before {
 	position: absolute;
@@ -71,13 +70,15 @@
 	height: 100%;
 }
 
-.skill-content__intro h3 {
+.skill-content__sub {
+	font-size: 18px !important;
 	padding: 0px 0px 25px;
+	font-weight: bold;
 }
 
-.skill-content__intro p {
+/* .skill-content__intro p {
 	padding-bottom: 10px;
-}
+} */
 
 .skill-icon {
 	width: 100%;
@@ -117,6 +118,12 @@
 	padding-top: 13px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.skill-item__text p {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: initial;
 }
 
 .skill-percentage {
@@ -185,17 +192,25 @@
 
 	.skill-link__container li {
 		width: 100%;
+	}
+
+	.skill-link__container p:nth-child(1) {
+		width: 100%;
 		padding: 0px 20px 0px 0px;
 		margin-left: initial;
 		margin-right: initial;
 		margin-top: 25px;
 	}
 
+	.skill-link__container p:nth-child(2) {
+		width: 100%;
+	}
+
+
 	.skill-content {
 		width: 100%;
 		flex-direction: column;
 	}
-
 
 	.skill-content__intro,
 	.skill-content__graph {
@@ -208,7 +223,6 @@
 		font-size: 40px;
 	}
 }
-
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
 	.skill-wrapper {
@@ -246,7 +260,6 @@
 		flex-direction: column;
 	}
 
-
 	.skill-content__intro,
 	.skill-content__graph {
 		width: 100%;
@@ -258,7 +271,6 @@
 		font-size: 40px;
 	}
 }
-
 
 @media screen and (min-width: 780px) and (max-width: 1024px) {
 	.skill-content {

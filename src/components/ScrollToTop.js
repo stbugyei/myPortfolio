@@ -31,7 +31,7 @@ const ScrollToTop = () => {
     return (
 
         <>
-            <button className='scroll' style={scrollVisibility()} onClick={scrollTotop}><i className="far fa-hand-point-up"></i></button>
+            <div className='scroll' style={scrollVisibility()} onClick={scrollTotop}><i className="fas fa-arrow-up"></i></div>
         </>
 
     )

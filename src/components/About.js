@@ -8,7 +8,7 @@ const About = (props) => {
     const [animate, setAnimate] = useState(false);
 
     useLayoutEffect(() => {
-       
+
         const animateOnScroll = () => {
             if (aboutMe) {
                 let scrollY = window.pageYOffset;
@@ -35,19 +35,19 @@ const About = (props) => {
 
         <div ref={aboutMe} className="about-wrapper">
             <ul className="about-link__container">
-                <h1>ABOUT MYSELF</h1>
-                <p style={{ animation: animate ? 'textSlide 1s' : 'undefined' }}> “There’s no need to be perfect to inspire others. Let others get inspired by how you deal with your imperfections.”</p>
+                <li><h1>ABOUT MYSELF</h1></li>
+                <li><p style={{ animation: animate ? 'textSlide 1s' : 'undefined' }}> “There’s no need to be perfect to inspire others. Let others get inspired by how you deal with your imperfections.”</p></li>
             </ul>
 
             <ul className="about-content">
-                <li className="about-image" style={{ animation: animate ? 'fade 1s' : 'undefined'}}>
+                <li className="about-image" style={{ animation: animate ? 'fade 1s' : 'undefined' }}>
                 </li>
 
                 <li className="about-text">
                     <h2>Profile Card</h2>
                     <p>
                         A successful computer hardware technician specialized in Operating Systems and software Installation, Computer Maintenance, Repairs and Assembling. I Have an unlimited understanding of working environment and work ethics, very tactful and decisive in handling related job issues from start to the end.
-                </p>
+                    </p>
                     <p style={{ paddingTop: '10px' }}>
                         I am presently into front-end web development and always looking for opportunities to improve my skill set and career progress opportunities.
                     </p>

@@ -1,10 +1,10 @@
 .header-wrapper {
 	position: relative;
 	width: 100%;
-	min-height: 92vh; 
+	min-height: 92vh;
 	text-decoration: none;
-	color: #fff;
-	background-color: #cbcbec;
+	color: #1a237e;
+	background-color: #F5F5F5;
 	display: flex;
 }
 
@@ -74,19 +74,17 @@ p {
 }
 
 .header-image {
-	width: 50%; 
+	width: 50%;
 	position: relative;
 	background-image: url(./../images/pix-removebg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 	list-style: none;
 	z-index: 99;
-	background-color: #cbcbec;
-	animation: slideIn 1s; 
+	background-color: #F5F5F5;
+	animation: slideIn 1s;
 }
-
-
 
 .btn-hireme {
 	width: 300px;
@@ -101,8 +99,8 @@ p {
 	justify-content: center;
 	cursor: pointer;
 	outline: none;
-	border: 2px solid #e6e6fa;
-	color: #e6e6fa;
+	border: 2px solid #fff;
+	color: #fff;
 	border-radius: 5px;
 	text-decoration: none;
 	box-shadow: 0 10px 20px rgb(0 0 0 / 9%);
@@ -113,7 +111,7 @@ p {
 
 .btn-hireme:hover {
 	color: red;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 @media screen and (max-width: 540px) {

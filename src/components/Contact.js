@@ -17,13 +17,13 @@ const Contact = (props) => {
 
     const [sentEmail, setSentEmail] = useState("");
 
-    const { nameSuccess, subjectSuccess, emailSuccess, messageSuccess} = SuccessFormValidation();
+    const { nameSuccess, subjectSuccess, emailSuccess, messageSuccess } = SuccessFormValidation();
 
     const { nameErr, subjectErr, emailErr, messageErr, errorInputValidation } = ErrorFormValidation();
 
     const [animate, setAnimate] = useState(false);
 
-     //================ scroll events with function =================
+    //================ scroll events with function =================
     useLayoutEffect(() => {
 
         const animateOnScrollScroll = () => {

@@ -34,15 +34,15 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-a:link {
+
+a:link,
+a:active, 
+a:visited {
 	list-style: none;
 	text-decoration: none;
+	color: inherit;
 }
 
-a:active {
-	list-style: none;
-	text-decoration: none;
-}
 
 .container {
 	width: 1200px;
@@ -366,13 +366,13 @@ a:active {
 	0% {
 		letter-spacing: 5px;
 		opacity: .5;
-		color: rgb(255, 0, 0);
+		/* color: rgb(255, 0, 0); */
 	}
 
 	100% {
 		letter-spacing: initial;
 		opacity: 1;
-		color: #fff;
+		/* color: blue; */
 	}
 }
 
@@ -389,3 +389,9 @@ a:active {
 		transition-delay: 0.5s;
 	}
 }
+
+ @media (max-width: 1200px) {
+	.container {
+		width: 100%;
+	}
+} 

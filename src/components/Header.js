@@ -42,7 +42,7 @@ const Header = (props) => {
 
                     <h1 style={{ animation: animate ? 'fade1 .8s' : 'undefined' }}>Emmanuel Bugyei</h1>
 
-                    <h3><span style={{ animation: animate ? 'stretchText 1s' : 'undefined' }}>And I'm</span> <span className="jobtitle" >Front-End Web developer</span></h3>
+                    <p><span style={{ animation: animate ? 'stretchText 1s' : 'undefined' }}>And I'm</span> <span className="jobtitle" >Front-End Web developer</span></p>
 
                     <div className="quote">
                         <p>
