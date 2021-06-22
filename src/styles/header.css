@@ -76,14 +76,13 @@ p {
 .header-image {
 	width: 50%;
 	position: relative;
-	background-image: url(./../images/pix-removebg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	list-style: none;
 	z-index: 99;
 	background-color: #F5F5F5;
-	animation: slideIn 1s;
+	background-blend-mode: multiply;
 }
 
 .btn-hireme {

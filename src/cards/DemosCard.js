@@ -1,10 +1,10 @@
 import React from 'react'
-import movie from '../images/movie.PNG'
-import checklist from '../images/checklist.PNG'
-import radio from '../images/radio.PNG'
-import recipe from '../images/recipe.PNG'
-import weather from '../images/weather.PNG'
-import account from '../images/acc.PNG'
+import movie from '../images/movie.jpeg'
+import checklist from '../images/checklist.webp'
+import radio from '../images/radio.jpg'
+import recipe from '../images/recipe.jpg'
+import weather from '../images/weather.jpg'
+import account from '../images/acc.jpg'
 
 const DemosCard = (props) => {
 

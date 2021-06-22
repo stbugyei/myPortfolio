@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect } from "react";
+import myPic from '../images/mypix.jpg'
 import "../styles/header.css"
 
 
@@ -38,9 +39,9 @@ const Header = (props) => {
             <ul className="header-content">
                 <li className="header-text">
 
-                    <strong className="hello-text" style={{ animation: animate ? 'stretchText .9s' : 'undefined' }}><span>He</span><br></br><span>llo,</span>   <span className="hello-text1">I am</span></strong>
+                    <strong className="hello-text" style={{ animation: animate ? 'stretchText .7s' : 'undefined' }}><span>He</span><br></br><span>llo,</span>   <span className="hello-text1">I am</span></strong>
 
-                    <h1 style={{ animation: animate ? 'fade1 .8s' : 'undefined' }}>Emmanuel Bugyei</h1>
+                    <h1 style={{ animation: animate ? 'fade1 .6s' : 'undefined' }}>Emmanuel Bugyei</h1>
 
                     <p><span style={{ animation: animate ? 'stretchText 1s' : 'undefined' }}>And I'm</span> <span className="jobtitle" >Front-End Web developer</span></p>
 
@@ -54,12 +55,12 @@ const Header = (props) => {
                         </p>
                     </div>
 
-                    <button className="btn-hireme" style={{ animation: animate ? 'slideup .8s' : 'undefined' }} onClick={() => scrollToRef(myContact)}>
+                    <button className="btn-hireme" style={{ animation: animate ? 'slideup .6s' : 'undefined' }} onClick={() => scrollToRef(myContact)}>
                         <span>Need A Project? Let's Chat</span>
                     </button>
                 </li>
 
-                <li className="header-image" style={{ animation: animate ? 'slideIn .8s' : 'undefined' }}></li>
+                <li className="header-image" style={{ animation: animate ? 'slideIn .6s' : 'undefined', backgroundImage: `url(${myPic})` }}></li>
             </ul>
         </div>
     )
