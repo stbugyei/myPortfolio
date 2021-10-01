@@ -24,7 +24,7 @@ const DemosCard = (props) => {
                             <p>Search and preview your favorite Movies, TV&TV-shows. Get up-to-date info on popular TV & Movie casts.</p>
                         </div>
                     </div>
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
 
@@ -41,7 +41,7 @@ const DemosCard = (props) => {
                         </div>
                     </div>
 
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
 
@@ -57,7 +57,7 @@ const DemosCard = (props) => {
                         </div>
                     </div>
 
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
 
@@ -73,7 +73,7 @@ const DemosCard = (props) => {
                         </div>
                     </div>
 
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
 
@@ -89,7 +89,7 @@ const DemosCard = (props) => {
                         </div>
                     </div>
 
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
 
@@ -105,7 +105,7 @@ const DemosCard = (props) => {
                         </div>
                     </div>
 
-                    <button className="demo-btn">Preview Demo</button>
+                    <button className="demo-btn">Use App</button>
                 </a>
             </li>
         </ul>

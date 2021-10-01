@@ -44,15 +44,15 @@ const Demos = (props) => {
     return (
         <div ref={myDemos} className="demo-wrapper">
 
-            <h1 style={{ animation: animate ? 'textSlide .5s' : 'undefined' }}>CATCH SOME DEMOS</h1>
+            <h1 style={{ animation: animate ? 'textSlide .5s' : 'undefined' }}>CATCH SOME APPs</h1>
 
-            <h2>Get a glimps of some DEMO projects</h2>
+            <h2>Get a glimps of some projects</h2>
 
             <DemosCard getStyle={getStyle} />
 
             <a href="https://github.com/stbugyei?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <h2 className="more-demos"> <span className="demo-arrow">
-                    <i className="far fa-hand-point-right"></i></span> Click Here For More Demos </h2>
+                    <i className="far fa-hand-point-right"></i></span> Click Here For More Apps </h2>
             </a>
 
         </div>
