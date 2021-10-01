@@ -63,7 +63,7 @@ const DemosCard = (props) => {
 
             <li className="demo-content__item" style={getStyle('0.0s')}>
             <div className="demo-content__bg3"></div>
-                <a href="https://abenarecipe.netlify.app/recipes" target="_blank" rel="noopener noreferrer">
+                <a href="https://priscyrecipes.com/" target="_blank" rel="noopener noreferrer">
                     <div className="pseudo"></div>
                     <h2>Food Recipe App</h2>
                     <div className="demo-content__poster">
